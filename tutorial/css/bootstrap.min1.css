@@ -1,0 +1,617 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    margin-top: 1px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px  80px;
+   background: color #dadce5;
+   box-shadow: 0px 5px 15px rgba(0,0, 0, 0.06);
+   z-index: 999;
+   position: sticky;
+   top: 0px;
+   left: 0px;
+
+
+}
+.logo{
+    height: 70px;
+    width: 85px;
+   
+}
+
+#navbar{
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    
+    
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(151, 233, 233);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"" ;
+    width:30% ;
+    height: 2px; ;
+    background:rgb(54, 204, 54) ;
+    position:absolute ;
+    bottom:-4px ;
+    left:20px ;   
+}
+
+#mobile  {
+    display: none;
+    align-items: center;
+}
+
+
+.pogo{
+    height:90vh ;
+    width: 100%; 
+     background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:start; 
+   
+}
+
+#hero h2{
+    color: aliceblue;
+}
+#hero h1{
+    color: azure;
+}
+
+#hero button{
+  
+    color: rgb(186, 8, 8);
+    border: 0px;
+    padding: 14px 80px 14px 65px;
+   border-radius: 25px;
+   background-repeat:no-repeat;
+    cursor: pointer;
+     font: weight 700 ;
+     font-size: 15 px;
+}
+
+.section-1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0px;
+}
+
+#features .fe-box{
+    width: 180px; 
+    text-align: center;
+    padding: 25px 15 px;
+    box-shadow: 20px 20px 34px rgba(0,0, 0, 0.03);
+    border: 1px solid #cfe4d2;
+     border: radius 4px;
+     margin: 15px;
+}
+
+#features .fe-box :hover {
+    box-shadow: 10px 10px 54px rgba(4, 2, 46, 0.03);
+
+}
+#features .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+#features{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+}
+
+#features .fe-box h5 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #ec9eaf;
+}
+
+#features .fe-box:nth-child(2) h5
+{
+   
+    color: #5de853;
+    background-color: #8425dc;
+}
+#features .fe-box:nth-child(3) h5
+{
+  
+    color: #be8710;
+    background-color: #b0df4b;
+}
+#features .fe-box:nth-child(2) h5
+{
+    
+    color: #feffff;
+    background-color: #bcb84261;
+}
+#features .fe-box:nth-child(2) h5
+{
+    
+    color: #26292f;
+    background-color: #1ea597;
+}
+
+#product1 {
+    text-align: center;
+}
+#product1 .pro {
+    width:23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border:0px solid #dee3de;
+    border-radius:25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 25px rgba(0,0, 0, 0.02);
+    margin: 15px 0;
+    transition:0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow:  20px 20px 25px rgba(0,0, 0, 0.06);
+}
+
+#product1 .pro img{
+    width:100%;
+    border-radius:20px;
+    height: 400px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0 px;
+}
+
+#product1 .pro .des span{
+    color: grey;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5  {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i {
+    font: sixe 12px;
+    color: rgb(243,181,25);
+}
+#product1 .pro .des h4 {
+    padding-top:7px;
+    font-size: 15 px;
+    font-weight:700;
+    color:#1ea597
+}
+
+#product1 .pro .fa fa-shopping-cart
+{
+    border: 1px solid #cad7cc;
+    position: absolute;
+    bottom: 20px;
+    right: 10 px;
+    line-height: 50px;
+    height: 40px;
+    width: 40px;
+     border-radius: 50px;
+     font-weight: 500;
+
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap:wrap;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.kong{
+    height: 450px;
+    width: 100%;
+    background-position: center;
+    font-size: large;
+   
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(243, 226, 226);
+    padding: 11px 18px;
+    border-radius: 4px;
+     border :1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+button.white{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    padding: 15px 10px;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+    text-align: center;
+}
+button.white1{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(244, 193, 193);
+    padding: 15px 10px;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+    text-align: center;
+}
+button.normal:hover{
+    background:#8425dc ;
+    color: #1a1a1a;
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:yellow ;
+    background-position:20% 30% ;
+    background-repeat:no repeat;
+    background-image: url("https://i.pinimg.com/originals/78/35/8f/78358f6a9f396c2e5996f0c81b874d9a.png");
+    color: blue;
+}
+
+
+#newsletter button{
+    background-color: #1ea597;
+}
+
+#newsletter .form{
+    display: flex;
+    
+
+}
+
+fotter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+fotter .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+fotter h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+
+}
+fotter p{
+    font-size: 13px;
+    text-decoration: none;
+    color: #131601;
+    margin-bottom: 0 0 8px 0;
+}
+
+
+
+fotter  .follow i {
+    color:#071a03 ;
+    padding-right:4px;
+    cursor: pointer;
+
+}
+fotter .install .row img{
+    border: 1px solid rgb(8, 43, 8);
+     border-radius:6px ;
+
+}
+fotter .install  img{
+    margin: 10px 0 15px 0;
+}
+
+fotter  .follow i:hover,fotter a:hover{
+    color: #eb2f42;
+}
+
+fotter .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:800px){
+    #navbar {
+        display:flex;
+        flex-direction: column;
+        align-items: self-start;
+        margin-top: 1px;
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        top:0 ;
+        right:-300px;
+        height: 100vh;
+        width: 300px;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+         
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    
+    #navbar li{
+        margin-bottom: 20px;
+    }
+
+    #mobile  {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left:  20px;
+
+    }
+    
+
+    
+}
+
+
+#pagenation{
+    text-align: center;
+
+}
+
+#pagenation a{
+     text-decoration:none ;
+     background-color: #088178;
+     padding:15px 20px ;
+     border-radius:4px ;
+     color: white;
+     font-weight: 600;
+}
+
+#pagenation a i{
+    font-size:16px ;
+    font-weight:600 ;
+}
+
+.pogo1{
+    height:90vh ;
+    width: 100%; 
+     background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:start; 
+   
+}
+
+#blog {
+    padding: 100px 100px 0 50px;
+}
+
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: 90px;
+}
+
+#blog .blog-image{
+    margin-right: 40px ;
+    
+}
+
+#blog  .blog-details{
+    width: 50%;
+}
+
+#blog  .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #071a03;
+    position: relative;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+#blog  .blog-details a::after{
+    content: "";
+    width: 50px;
+    height:1px ;
+    background-color:black ;
+    position:absolute ;
+    top:4px ;
+    right: -60px;
+}
+
+#blog  .blog-details a:hover{
+    color: red;
+}
+
+#blog  .blog-details a:hover::after{
+    background-color: red;
+}
+
+#blog  .blog-box h1{
+    position: absolute;
+    top: -40px;
+    left:0 ;
+    font-size:70px ;
+    font-weight:700;
+    color:white ;
+    z-index: -9;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+#About-app{
+    text-align: center;
+}
+
+#About-app .vedio{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#Contact-details{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#Contact-details .details{
+    width: 40%;
+}
+
+#Contact-details .details span 
+{
+    font-size: 35 px;
+
+}
+#form-details form span{
+    font-size: 40%;
+
+}
+
+#Contact-details .details h2
+{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0px;
+}
+#form-details form h2{
+    font-size: 50%;
+    line-height: 45px;
+    padding: 20px 0px;
+
+}
+
+#Contact-details .details h3{
+    font-size: 26px;
+   padding-bottom: 15px;
+
+}
+
+#Contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#Contact-details .details li i{
+    font-size: 14;
+    padding: 22px;
+
+}
+
+#Contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+    
+}
+
+#Contact-details .map{
+    width: 55%;
+    height: 400px;
+
+}
+
+#Contact-details .map iframe{
+  height: 100%;
+  width: 100%;
+}
+
+#form-details form{
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+
+}
+
+#form-details form input{
+    width:100%;
+    padding:12px 15px ;
+    outline:none;
+    margin-bottom:20px;
+    border:1px solid wheat ;
+}
